@@ -1,0 +1,187 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 75px;
+  gap: 35px;
+  margin-top: 220px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    margin-top: 160px;
+    gap: 12px;
+  }
+
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    display: block;
+    margin-top: calc(310px + (310 - 213) * ((100vw - 390px) / (768 - 390)));
+    margin-bottom: 50px;
+  }
+}
+
+.intro__content {
+  max-width: 625px;
+  padding: 50px;
+  border-radius: 25px;
+  background: var(--purple-gradient);
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    width: calc(402px + (625 - 402) * ((100vw - 768px) / (1144 - 768)));
+    padding: calc(30px + (50 - 30) * ((100vw - 768px) / (1144 - 768)));
+  }
+
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    max-width: 100%;
+    padding: 70px 18px 12px;
+    position: relative;
+  }
+}
+
+.intro__title {
+  font-size: var(--header1);
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    font-size: calc(
+      var(--header3) + (70 - 36) * ((100vw - 768px) / (1144 - 768))
+    );
+  }
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    font-size: calc(30px + (36 - 30) * ((100vw - 390px) / (768 - 390)));
+    text-align: center;
+  }
+}
+
+.intro__subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 52px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    gap: calc(24px + (52 - 24) * ((100vw - 768px) / (1144 - 768)));
+  }
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    display: block;
+    padding: 0 25px;
+  }
+}
+
+.intro__subtitle img {
+  width: 80px;
+  height: 80px;
+
+  @media screen and (max-width: 768px) {
+    width: 70px;
+    height: 70px;
+  }
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.intro__subtitle-text {
+  font-size: var(--title);
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    font-size: calc(16px + (24 - 16) * ((100vw - 768px) / (1144 - 768)));
+  }
+
+  @media screen and (max-width: 768px) {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.intro__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 22px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    padding: 0 calc(22 * ((100vw - 768px) / (1144 - 768)));
+  }
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 0;
+  }
+}
+
+.intro__button button {
+  width: 200px;
+  height: 60px;
+  font-size: var(--button);
+  padding: 10px 16px;
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    width: calc(150px + (200 - 150) * ((100vw - 768px) / (1144 - 768)));
+    height: calc(40px + (60 - 40) * ((100vw - 768px) / (1144 - 768)));
+    font-size: calc(
+      var(--button-small) + (20 - 16) * ((100vw - 768px) / (1144 - 768))
+    );
+  }
+
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    width: 100%;
+    height: 40px;
+    font-size: var(--button-small);
+  }
+}
+
+.intro__button-subscribe {
+  color: inherit;
+  background: var(--main-orange);
+  border: none;
+}
+
+.intro__button-watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--main-orange);
+  background: transparent;
+  border: 2px solid var(--main-orange);
+}
+
+.intro__button-watch img {
+  width: 40px;
+  height: 40px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    width: calc(20px + (40 - 20) * ((100vw - 768px) / (1144 - 768)));
+    height: calc(20px + (40 - 20) * ((100vw - 768px) / (1144 - 768)));
+  }
+
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.intro__image {
+  max-width: 400px;
+  max-height: 490px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    width: calc(257px + (400 - 257) * ((100vw - 768px) / (1144 - 768)));
+  }
+
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    width: calc(213px + (257 - 213) * ((100vw - 390px) / (768 - 390)));
+    position: absolute;
+    bottom: 86%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.intro__image img {
+  width: 100%;
+  height: 100%;
+}
