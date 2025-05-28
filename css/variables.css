@@ -1,0 +1,22 @@
+:root {
+  --background: rgba(26, 23, 61, 1);
+  --main-white: rgba(255, 255, 255, 1);
+  --main-orange: rgba(226, 83, 0, 1);
+  --main-pupple: rgba(81, 51, 166, 1);
+  --orange-gradient: radial-gradient(
+    rgba(245, 194, 146, 1) 25%,
+    rgba(241, 150.65, 1) 85%
+  );
+  --purple-gradient: linear-gradient(
+    rgba(133, 100, 187, 0.67) 0%,
+    rgba(102, 44, 197, 0.85) 85%
+  );
+  --header1: 70px;
+  --header2: 48px;
+  --header3: 36px;
+  --subheader: 34px;
+  --title: 24px;
+  --button: 20px;
+  --button-small: 16px;
+  --opportunity-angle: 7.5deg;
+}
