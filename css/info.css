@@ -1,0 +1,143 @@
+.info {
+  position: relative;
+  background: var(--purple-gradient);
+  border-radius: 25px;
+  padding: 32px 38px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+.info::before {
+  content: "";
+  width: 4px;
+  height: 130px;
+  border-radius: 4px;
+  background: var(--main-white);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stat {
+  width: 50%;
+}
+
+.stat__item {
+  display: inline-block;
+  margin-right: 78px;
+}
+
+.stat__item:last-child {
+  margin-right: 0;
+}
+
+.stat__item-title {
+  font-size: var(--title);
+}
+
+.stat__item-icon {
+  display: block;
+  margin: 16px auto;
+}
+
+.stat__item-value {
+  font-size: var(--subheader);
+}
+
+.comments {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment {
+  display: none;
+  padding-left: 62px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+
+#radio-comment1:checked ~ #comment1,
+#radio-comment2:checked ~ #comment2,
+#radio-comment3:checked ~ #comment3 {
+  display: flex;
+}
+
+.comments__radio {
+  display: flex;
+  gap: 20px;
+}
+
+.comments__radio label {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+
+#radio-comment1:checked ~ .comments__radio label[for='radio-comment1'],
+#radio-comment2:checked ~ .comments__radio label[for='radio-comment2'],
+#radio-comment3:checked ~ .comments__radio label[for='radio-comment3'] {
+  background-color: var(--main-orange);
+}
+
+#radio-comment1,
+#radio-comment2,
+#radio-comment3 {
+  display: none;
+}
+
+
+.comment__photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.comment__info h4 {
+  font-size: var(--title);
+}
+
+.comment__info p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1144px) {
+  .info {
+    flex-direction: column;
+    padding: 38px 30px;
+  }
+
+  .info::before {
+    width: calc(100% - 2 * 38px);
+    height: 4px;
+  }
+
+  .stat {
+    width: 100%;
+    padding: 0 44px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .stat__item {
+    margin-right: 130px;
+  }
+
+  .comment {
+    width: 100%;
+    padding: 20px 20px 32px;
+    justify-content: flex-start;
+  }
+}
