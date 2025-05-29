@@ -5,7 +5,7 @@
 @import "./intro.css";
 @import "./info.css";
 @import './opportunities.css';
-
+@import './gallery.css';
 
 * {
   margin: 0;
