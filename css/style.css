@@ -4,8 +4,9 @@
 @import "./header.css";
 @import "./intro.css";
 @import "./info.css";
-@import './opportunities.css';
-@import './gallery.css';
+@import "./opportunities.css";
+@import "./gallery.css";
+@import "./subscribe.css";
 
 * {
   margin: 0;
@@ -32,6 +33,7 @@ body {
   font-style: normal;
   color: var(--main-white);
   line-height: 1.24;
+  overflow-x: hidden;
 }
 
 .container {
