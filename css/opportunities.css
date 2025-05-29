@@ -1,0 +1,105 @@
+.opportunities__title-wrapper {
+  max-width: 744px;
+  margin-bottom: 136px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    margin-bottom: 50px;
+  }
+}
+
+.opportunities__title {
+  max-width: 623px;
+  font-size: var(--header2);
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    width: calc(478px + (623 - 478) * ((100vw - 768px) / (1144 - 768)));
+    font-size: calc(
+      var(--header3) + (48 - 36) * ((100vw - 768px) / (1144 - 768))
+    );
+  }
+}
+
+.opportunities__subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.15;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    width: calc(600px + (774 - 600) * ((100vw - 768px) / (1144 - 768)));
+  }
+}
+
+.opportunity-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 110px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.opportunity {
+  position: relative;
+  max-width: 345px;
+  max-height: 410px;
+  transform: skewY(var(--opportunity-angle));
+  padding: 205px 22px 80px 22px;
+  background: var(--purple-gradient);
+  cursor: pointer;
+  border-radius: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    max-width: 944px;
+    width: calc(565px + (944 - 565) * ((100vw - 768px) / (1144 - 768)));
+    height: 265px;
+    padding: 70px 170px 70px 24px;
+    transform: skewY(calc(var(--opportunity-angle) / 2));
+  }
+}
+
+.opportunity:hover {
+  background: var(--orange-gradient);
+}
+
+.opportunity__image {
+  position: absolute;
+  top: -115px;
+  left: 50%;
+  transform: translateX(-50%) skewY(calc(-1 * var(--opportunity-angle)));
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    top: 50%;
+    right: 0;
+    transform: translate(20%, -50%)
+      skewY(calc(-1 * var(--opportunity-angle) / 2));
+  }
+}
+
+.opportunity__title {
+  transform: skewY(calc(-1 * var(--opportunity-angle)));
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    width: 374px;
+    transform: skewY(calc(-1 * var(--opportunity-angle) / 2));
+  }
+}
+
+.opportunity__title h3 {
+  font-size: var(--subheader);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.opportunity__title p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.15;
+}
