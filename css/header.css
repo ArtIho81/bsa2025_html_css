@@ -6,7 +6,7 @@ header {
   background: var(--background);
   z-index: 100;
 
-  @media screen and (min-width: 390px) and (max-width: 767px) {
+  @media screen and (min-width: 390px) and (max-width: 876px) {
     top: 30px;
   }
 }
@@ -25,7 +25,7 @@ header {
   font-size: var(--header3);
   color: var(--main-orange);
 
-  @media screen and (min-width: 390px) and (max-width: 767px) {
+  @media screen and (min-width: 390px) and (max-width: 876px) {
     font-size: calc(var(--title) + (36 - 24) * (100vw - 390px) / (768 - 390));
     gap: calc(13px + (20 - 13) * (100vw - 390px) / (768 - 390));
   }
@@ -36,7 +36,7 @@ header {
   width: 60px;
   height: 60px;
 
-  @media screen and (min-width: 390px) and (max-width: 767px) {
+  @media screen and (min-width: 390px) and (max-width: 876px) {
     width: calc(40px + (60 - 40) * (100vw - 390px) / (768 - 390));
     height: calc(40px + (60 - 40) * (100vw - 390px) / (768 - 390));
   }
@@ -46,7 +46,7 @@ header {
   display: inline-block;
   margin-right: 34px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 876px) {
     display: none;
   }
 }
@@ -87,13 +87,13 @@ button.menu__link {
   padding: 10px 16px;
   cursor: pointer;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 876px) {
     display: none;
   }
 }
 
 .menu__button {
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 876px) {
     display: none;
   }
 }

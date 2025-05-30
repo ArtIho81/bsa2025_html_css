@@ -24,10 +24,14 @@
   font-size: var(--header2);
   margin-bottom: 15px;
 
-  @media screen and (min-width: 768px) and (max-width: 1144px) {
+  @media screen and (min-width: 769px) and (max-width: 1144px) {
     font-size: calc(
       var(--header3) + (48 - 36) * ((100vw - 768px) / (1144 - 768))
     );
+  }
+
+  @media screen and (min-width: 390px) and (max-width: 768px) {
+    font-size: calc(var(--title) + (36 - 24) * ((100vw - 390px) / (768 - 390)));
   }
 }
 
@@ -37,11 +41,15 @@
   font-style: normal;
   font-size: 18px;
   line-height: 1.15;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .input-wrapper {
   position: relative;
-  max-width: 602px;
+  max-width: calc(602 / 919 * 100%);
   max-height: 41px;
 
   @media screen and (min-width: 390px) and (max-width: 768px) {
@@ -82,11 +90,19 @@
   bottom: -85px;
   transform: scaleX(-1);
 
-  @media screen and (min-width: 768px) and (max-width: 1144px) {
-    --dim: calc(313px + (529 - 313) * ((100vw - 768px) / (1144 - 768)));
-    width: var(--dim);
-    height: var(--dim);
-    right: calc(-176 / 529 * var(--dim));
-    bottom: calc(-85 / 529 * var(--dim))
+  @media screen and (min-width: 769px) and (max-width: 1144px) {
+    --dim-tablet: calc(313px + (529 - 313) * ((100vw - 768px) / (1144 - 768)));
+    width: var(--dim-tablet);
+    height: var(--dim-tablet);
+    right: calc(-176 / 529 * var(--dim-tablet));
+    bottom: calc(-85 / 529 * var(--dim-tablet));
+  }
+
+  @media screen and (min-width: 390px) and (max-width: 768px) {
+    --dim-phone: calc(251px + (313 - 251) * ((100vw - 390px) / (768 - 390)));
+    width: var(--dim-phone);
+    height: var(--dim-phone);
+    top: calc(-185 / 313 * var(--dim-phone));
+    right: calc(-16 / 313 * var(--dim-phone));
   }
 }

@@ -9,6 +9,10 @@
 @import "./subscribe.css";
 @import "./footer.css";
 
+.hidden {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
